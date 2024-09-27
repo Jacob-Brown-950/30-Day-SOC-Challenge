@@ -1,16 +1,32 @@
-# 30-Day-SOC-Challenge
+## 30-Day SOC Analyst Challenge
 
-Im doing a 30-Day SOC Analyst Challenge, where I will gain practical experience in various aspects of cybersecurity. Here’s a summary of what I’ll be focusing on each week:
+I am taking on the **30-Day SOC Analyst Challenge** created by [MyDFIR](https://www.youtube.com/@MyDFIR), where I will gain practical experience in various aspects of cybersecurity using the Vultr cloud service. This will also allow me to become familiar with Cybersecurity using a new cloud platform im unfamiliar with. Here’s a breakdown of what I’ll be focusing on each week:
 
-Week 1: Introduction to the ELK Stack
-Objective: Set up and configure Elastic and Kibana.
-Activities: Learn to ingest logs from endpoints and create a logical diagram.
-Week 2: Brute Force Attack Detection
-Objective: Understand and detect brute force attacks.
-Activities: Set up a public SSH and RDP server, create alerts, and develop dashboards using Kibana.
-Week 3: Command and Control (C2) Understanding
-Objective: Explore command and control frameworks.
-Activities: Spin up a C2 server using Mythic and practice attacking public servers.
-Week 4: Ticketing System Integration and Investigations
-Objective: Integrate a ticketing system and conduct investigations.
-Activities: Set up and integrate a ticketing system while performing security investigations.
+### Week 1: Introduction to ELK
+- **Topics**: 
+  - Introduction to the ELK Stack
+  - How to set up ELK
+  - How to ingest logs using Sysmon
+
+### Week 2: Brute Force Attack Detection
+- **Topics**: 
+  - Introduction to brute force attacks
+  - How to set up SSH and RDP servers
+  - How to create alerts and dashboards
+
+### Week 3: Command and Control (C2)
+- **Topics**: 
+  - Introduction to command and control (C2)
+  - How to set up your own C2 server using Mythic
+  - How to attack public servers
+
+### Week 4: Ticketing System Integration and Investigations
+- **Topics**: 
+  - Introduction to ticketing systems
+  - Conducting investigations
+
+### Conclusion
+By the end of this challenge, I aim to have acquired valuable skills and knowledge that will enhance my capabilities as an aspiring SOC Analyst.
+
+### Credit
+Special thanks to [MyDFIR](https://www.youtube.com/@MyDFIR) for creating this challenge!
