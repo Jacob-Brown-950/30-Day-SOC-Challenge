@@ -4,38 +4,44 @@
   ![Network Diagram](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Network%20Logical%20Diagram.png)
 
 - **Created a VPC 2.0 network** in Vultr.  
-  ![VPC Setup](path/to/image.png)
+  ![VPC Setup](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%202%20Click%20%22Add%20VPC%202.0%22.png)
 
-- **Set up my Ubuntu 22.04 server** and ran updates.  
-  ![Ubuntu Server Setup](path/to/image.png)
+- **Set up my Ubuntu 22.04 server VM** and ran updates.  
 
 - **Downloaded Elasticsearch debx86_64** and configured the `elasticsearch.yml` file.  
-  ![Elasticsearch Download](path/to/image.png)
+  ![Elasticsearch Download](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%203%20Downloading%20Elasticsearch.png)
 
-- *(Optional)* Added a firewall group setting to ensure only I can access the server, restricting access from the entire internet.  
-  ![Firewall Group Setting](path/to/image.png)
+- *(Optional)* Added a firewall group setting to ensure only I can access the server, restricting access from the entire internet. (I did this and it actually caused some troubleshooting issues later!)
 
-- **Successfully started and confirmed Elasticsearch** is running.  
-  ![Elasticsearch Running](path/to/image.png)
+- **Successfully started and confirmed Elasticsearch** is running. During the download, save this information somewhere
+  ![Elasticsearch Running](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%204%20Make%20Sure%20You%20Save%20This%20info!.png)
 
-- **Downloaded Kibana debx86_64**, configured the `kibana.yml`, and started Kibana.  
-  ![Kibana Download](path/to/image.png)
+  - **Use the public IP for your elasticsearch config
+  ![Find Public IP](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%205%20Set%20it%20to%20this%20so%20you%20can%20access%20it%20via%20SOC%20Laptop.png)
 
-- **Issue 1 solved**: Firewall was only allowing port 22; ensured the port Kibana is on is allowed for remote access.  
-  ![Firewall Issue Fix](path/to/image.png)
+  - Implementing the Config (Uncomment the port number and the IP)
+  ![Configure yml File](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%206%20Configure%20elasticsearch%20yml%20file.png)
+
+- **Downloaded Kibana debx86_64**, configured the `kibana.yml`, and started Kibana. (Same process as Elasticsearch)
+  ![Configure yml File](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%207%20Configure%20Kibana%20yml.png)
+
+  - Get Your Elasticsearch Token and save this somewhere, we need it later
+  ![Elasticsearch Token](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%208%20Get%20your%20Token.png)
+  
+- **Issue 1 solved**: Firewall was only allowing port 22; ensured the port Kibana is on is allowed for remote access.
 
 - **Ran `ufw allow 5601`** on the VM CLI to allow Kibana's port.  
-  ![Allow Port 5601](path/to/image.png)
 
-- **Pasted the enrollment token** on the web GUI, received my **verification code**, and successfully completed the setup.  
-  ![Enrollment Token](path/to/image.png)
+- **Pasted the enrollment token** on the web GUI, received my **verification code**, and successfully completed the setup.
+  ![Configure Web GUI](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%209%20Got%20in%20to%20Kibana!%20now%20paste%20your%20key%20in.png)
 
 - Solved the **API integration error** by adding Kibana keys into the keystore. The **Kibana web GUI is fully functional**!  
-  ![Kibana GUI](path/to/image.png)
+  ![Access Your Encryption Keys](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2011%20Get%20your%20encryption%20keys.png)
+
+- Enter those Keys into your kibana Keystore one by one
+- ![Enter Kibana Keys](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2012%20Enter%20those%20keys%20into%20the%20keystore.png)
 
 ### Additional Changes:
-- **Modified the logical diagram**: Decided **not to put the Windows and Ubuntu server in the VPC** to prevent exposing the entire network if compromised.  
-  ![Logical Diagram Update](path/to/image.png)
 
 - **Exposed RDP to the internet** to generate failed login logs for investigation later. Verified RDP connection via the web.  
   ![RDP Exposed](path/to/image.png)
