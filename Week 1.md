@@ -24,16 +24,16 @@ In the first week of the project, I successfully set up the ELK stack and config
 - **Confirmed that Elasticsearch is running** successfully. Make sure to save this information somewhere!  
   ![Elasticsearch Running](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%204%20Make%20Sure%20You%20Save%20This%20info!.png)
 
-  - **Use the public IP for your Elasticsearch config.**  
+- **Use the public IP for your Elasticsearch config.**  
   ![Find Public IP](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%205%20Set%20it%20to%20this%20so%20you%20can%20access%20it%20via%20SOC%20Laptop.png)
 
-  - **Implementing the Config**: Uncomment the port number and the IP in the config file.  
+- **Implementing the Config**: Uncomment the port number and the IP in the config file.  
   ![Configure yml File](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%206%20Configure%20elasticsearch%20yml%20file.png)
 
 - **Downloaded Kibana** (`deb x86_64`), configured the `kibana.yml`, and started Kibana (similar process as Elasticsearch).  
   ![Kibana Configuration](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%207%20Configure%20Kibana%20yml.png)
 
-  - Obtained your **Elasticsearch Token** and saved it for later use.  
+- Obtained your **Elasticsearch Token** and saved it for later use.  
   ![Elasticsearch Token](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%208%20Get%20your%20Token.png)
 
 ### 4. Troubleshooting
