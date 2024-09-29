@@ -62,7 +62,7 @@ In the first week of the project, I successfully set up the ELK stack and config
   ![Agent Deployment](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2017%20Agent%20Installed%20Successfuly!%20.png)
 
 - **Issue 2 resolved**: Added a rule to allow communication between the fleet server and Kibana.  
-  ![Kibana Fleet Server Configuration](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2018%20Go%20to%20fleet%20and%20change%20the%20port!.png)
+  ![Kibana Fleet Server Configuration](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2016%20Add%20firewall%20rule%20to%20allow%20fleet%20server%20connection.png)
 
 - Created a **policy for the Windows server** to install the agent and collect logs.
 - **Allowed agent connection** on the fleet server with `ufw allow 8220`.
