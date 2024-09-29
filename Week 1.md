@@ -44,29 +44,30 @@
 ### Additional Changes:
 
 - **Exposed RDP to the internet** to generate failed login logs for investigation later. Verified RDP connection via the web.  
-  ![RDP Exposed](path/to/image.png)
 
 ### Fleet Server Setup:
 - **Created a fleet server** and pointed it to the Vultr fleet server in Kibana.  
-  ![Fleet Server Setup](path/to/image.png)
+  ![Got Fleet Server IP](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2013%20Get%20Public%20IP%20of%20Fleet%20Server%20.png)
+  ![Configure Fleet](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2014%20Point%20Fleet%20Server%20in%20Kibana%20to%20IP.png)
+  ![Had to Add Firewall rule since I made it strict for it to work](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2016%20Add%20firewall%20rule%20to%20allow%20fleet%20server%20connection.png)
 
 - **Deployed the agent** by running the script.  
-  ![Agent Deployment](path/to/image.png)
+  ![Agent Deployment](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2017%20Agent%20Installed%20Successfuly!%20.png)
 
-- **Issue 2 solved**: Added a firewall rule so the fleet server can communicate (`ufw allow 9200` on the ELK server for Elasticsearch).  
-  ![Firewall Rule 9200](path/to/image.png)
+- **Issue 2 solved**: Added rule so the fleet server can communicate
+  ![Kibana Fleet Server Configure](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2018%20Go%20to%20fleet%20and%20change%20the%20port!.png)
 
-- Created a **policy for the Windows server** to install the agent and collect logs.  
-  ![Windows Server Policy](path/to/image.png)
+- Created a **policy for the Windows server** to install the agent and collect logs.
 
-- **Allowed agent connection** on the fleet server (`ufw allow 8220`).  
-  ![Agent Connection 8220](path/to/image.png)
+- **Allowed agent connection** on the fleet server (`ufw allow 8220`). 
 
 - **Issue 3 solved**: Changed the fleet port from **443 to 8220** and added `--insecure` to handle the self-signed certificate issue.  
-  ![Fleet Port Change](path/to/image.png)
+  ![Fleet Port Change](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2018%20Go%20to%20fleet%20and%20change%20the%20port!.png)
+
+  ![Script Modification](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2019%20Fix%20the%20script%20and%20run%20again%2C%20success.png)
 
 - Confirmed **connection and logs** flowing into the fleet dashboard. **Success!**  
-  ![Logs in Fleet Dashboard](path/to/image.png)
+  ![Logs in Fleet Dashboard](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2021%20See%20if%20you%20got%20logs!%20.png)
 
 This concludes Week 1.
 
