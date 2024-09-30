@@ -1,4 +1,4 @@
-## 30-Day SOC Analyst Challenge
+## 30-Day SOC Challenge
 
 I am taking on the **30-Day SOC Analyst Challenge** created by [MyDFIR](https://www.youtube.com/@MyDFIR), where I will gain practical experience in various aspects of cybersecurity using the Vultr cloud service. This will also allow me to become familiar with Cybersecurity using a platform im unfamiliar with. Here’s a breakdown of what I’ll be focusing on each week:
 
