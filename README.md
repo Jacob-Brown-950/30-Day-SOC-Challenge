@@ -2,7 +2,7 @@
 
 I’ve decided to take on the **30-Day SOC Analyst Challenge**, a fantastic project created by [MyDFIR](https://www.youtube.com/@MyDFIR). The goal of this challenge is to gain practical, hands-on experience in various areas of cybersecurity, while also getting familiar with a new cloud platform—**Vultr**. As someone who’s still building a solid foundation in cybersecurity, I believe this challenge will not only enhance my knowledge but also strengthen my skills through real-world scenarios.
 
-Here’s a breakdown of what each week focuses on and some insights into why I chose these topics:
+Here’s a breakdown of what each week focuses on and some insights into why these topics are important:
 
 ---
 
