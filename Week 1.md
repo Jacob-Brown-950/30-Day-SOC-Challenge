@@ -19,7 +19,7 @@ In the first week of the project, I successfully set up the ELK stack and config
 - **Downloaded Elasticsearch** (`deb x86_64`) and configured the `elasticsearch.yml` file.  
   ![Elasticsearch Download](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%203%20Downloading%20Elasticsearch.png)
 
-- *(Optional)* Added a firewall group setting to restrict access to the server. (This caused some troubleshooting issues later on so i have a few extra steps for allowing ports and IPs)
+- *(Optional)* Added a firewall group setting to restrict access to the server. (This caused some troubleshooting issues later on so I have a few extra steps for allowing ports and IPs)
 
 - **Confirmed that Elasticsearch is running** successfully. Make sure to save this information somewhere!  
   ![Elasticsearch Running](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%204%20Make%20Sure%20You%20Save%20This%20info!.png)
@@ -73,4 +73,4 @@ In the first week of the project, I successfully set up the ELK stack and config
 
 ---
 
-This concludes Week 1.
+This concludes Week 1. In **Week 2**, we will dive deeper into using Sysmon for monitoring and logging system activity on Windows machines. Stay tuned!
