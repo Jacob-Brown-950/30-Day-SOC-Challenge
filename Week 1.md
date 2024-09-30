@@ -73,4 +73,4 @@ In the first week of the project, I successfully set up the ELK stack and config
 
 ---
 
-This concludes Week 1. In **Week 2**, we will dive deeper into using Sysmon for monitoring and logging system activity on Windows machines. Stay tuned!
+This concludes Week 1. In **Week 2**, we will dive deeper into using Sysmon for monitoring and logging system activity on Windows machines.
