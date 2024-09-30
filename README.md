@@ -26,7 +26,7 @@ I am taking on the **30-Day SOC Analyst Challenge** created by [MyDFIR](https://
   - Conducting investigations
 
 ### Conclusion
-By the end of this challenge, I aim to have acquired valuable skills and knowledge that will enhance my capabilities as an aspiring SOC Analyst.
+By the end of this challenge, I aim to have acquired valuable skills and knowledge that will enhance my capabilities as an aspiring Cybersecurity professional.
 
 ### Credit
 Special thanks to [MyDFIR](https://www.youtube.com/@MyDFIR) for creating this challenge!
