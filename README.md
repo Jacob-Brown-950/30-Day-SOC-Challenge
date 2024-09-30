@@ -12,7 +12,7 @@ Here’s a breakdown of what each week focuses on and some insights into why I c
   - **How to set up ELK**: I’ll be deploying the ELK stack on the Vultr cloud service. This will teach me not only the setup but also troubleshooting common issues with cloud deployments—an essential skill in today’s remote infrastructure-heavy world.
   - **How to ingest logs using Sysmon**: Sysmon is invaluable for gathering detailed event logs on Windows. I’ll be integrating it into ELK for log ingestion, which is a critical process for monitoring system activities and detecting potential threats early.
 
-*Why I chose this*: Setting up ELK and Sysmon helps lay the groundwork for monitoring and alerting, two critical functions in any SOC. Plus, ELK is a must-know tool for anyone aspiring to work in security operations.
+Setting up ELK and Sysmon helps lay the groundwork for monitoring and alerting, two critical functions in any SOC. Plus, ELK is a must-know tool for anyone aspiring to work in security operations.
 
 ---
 
