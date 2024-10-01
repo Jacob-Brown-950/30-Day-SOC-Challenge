@@ -8,7 +8,7 @@ Hey everyone! In Week 1, I dove into setting up the ELK stack and configuring th
 ### 1. Network Diagram
 - **Created a logical diagram** to represent the network, including the threat actor. Here's a key point: I placed the Windows and Ubuntu servers outside the VPC. Why? Because if someone manages to compromise one of these servers, they could gain access to the entire network. Keep that in mind when designing your network for security!
 
-  ![Network Diagram](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Network%20Logical%20Diagram.png)
+  ![Network Diagram](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Network%20Logical%20View.png)
 
 ### 2. VPC Setup
 - **Created a VPC 2.0 network** in Vultr. The setup was pretty straightforward, but if you're unfamiliar with Vultr, make sure you check out their docs. Setting up a secure environment from the get-go makes a world of difference later on.  
