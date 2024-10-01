@@ -74,4 +74,4 @@ Hey everyone! In Week 1, I dove into setting up the ELK stack and configuring th
 
 ---
 
-That’s a wrap for Week 1! Next up in **Week 2**, we’ll dive into using Sysmon to monitor and log system activity on Windows. If you found Week 1 useful, get ready for even more fun and challenges next week!
+This is all for Week 1! in **Week 2**, we’ll dive into using Sysmon to monitor and log system activity on Windows.
