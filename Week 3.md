@@ -1,17 +1,12 @@
 # Week 3: Brute Force RDP Attack Simulation and Mythic C2 Setup
 
-## Objectives
-- Use Shodan and Censys to find servers with exposed RDP
-- Create and configure detection rules
-- Spin up an Ubuntu server for Mythic C2 and implement payloads
-
 ## Steps
 
 ### 1. Finding Exposed RDP Servers
 - **Using Shodan**: Search for servers with exposed RDP on the default port.
-  ![Shodan Search](link_to_your_image) <!-- Replace with actual image link -->
+  ![Shodan Search]() 
 - **Using Censys**: Perform the same search to verify results.
-  ![Censys Search](link_to_your_image) <!-- Replace with actual image link -->
+  ![Censys Search](link_to_your_image) 
 
 ### 2. Monitoring Failed RDP Attempts
 - Created a log query for failed RDP attempts and confirmed my own failed login.
