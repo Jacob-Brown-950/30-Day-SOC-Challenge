@@ -123,7 +123,7 @@
     ufw allow 80
     ```
 
-  - Allow port 9999:
+- Allow port 9999:
     ```bash
     ufw allow 9999
     ```
