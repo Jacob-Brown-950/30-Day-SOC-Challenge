@@ -112,7 +112,7 @@
 
 ### 12. Created the payload with your installed services:
     - Ensured it calls back to the C2 server's public IP.
-      [image](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2073%20put%20what%20you%20want%20in%20your%20payload%2C%20and%20make%20it%20call%20back%20to%20your%20C2%20server.PNG)
+- ![Make sure](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2073%20put%20what%20you%20want%20in%20your%20payload%2C%20and%20make%20it%20call%20back%20to%20your%20C2%20server.PNG)
 
 ### 13. Downloading and Executing Payload
 - SSH into Mythic server and download agent:
