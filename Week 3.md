@@ -4,7 +4,7 @@
 
 ### 1. Finding Exposed RDP Servers
 - **Using Shodan**: Search for servers with exposed RDP on the default port.
-  ![Shodan Search]() 
+  ![Shodan Search](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2043%20Creating%20an%20account%20with%20shodan%20and%20searching%20port%203389.PNG) 
 - **Using Censys**: Perform the same search to verify results.
   ![Censys Search](link_to_your_image) 
 
