@@ -6,7 +6,7 @@ Hey everyone! Welcome to Week 1 of the **30-Day SOC Analyst Challenge**. This we
 
 ### 1. **Created a Network Diagram**
 - I started off by creating a **logical network diagram** to visualize the setup, including the threat actor. One important thing to note: I placed the Windows and Ubuntu servers **outside the VPC**. Why? Because if an attacker manages to compromise one of these servers, they could gain access to the entire network. Something to keep in mind when designing your network!  
-  ![Network Diagram](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Network%20Logical%20View.png)
+  ![Network Diagram](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Network%20Logical%20View.PNG)
 
 ### 2. **VPC Setup**
 - Next, I set up a **VPC 2.0 network** in Vultr. It was a pretty straightforward process, but if you’re new to Vultr, I recommend checking out their documentation for a smooth setup. A secure environment from the start can save you headaches later on!  
