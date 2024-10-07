@@ -83,28 +83,20 @@ Hey everyone! Welcome to Week 2 of the **30-Day SOC Analyst Challenge**. This we
 
 22. Setting Up Logging and Monitoring
    - **Verifying Log Ingestion**: After setting up log collection from various servers, I checked to ensure that logs were being successfully ingested. Confirmed logs are being received!
-  ![Log Ingestion Verification](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2040%20Log%20ingestion%20verified%20logs%20are%20coming%20in.PNG) <!-- Replace with actual image link -->
+  ![Log Ingestion Verification](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2037%20seeing%20if%20we%20are%20successfully%20getting%20those%20logs.PNG) <!-- Replace with actual image link -->
 
 23. SSH Brute Force Alerts
    - **Creating SSH Brute Force Alerts**: Set up alerts to detect brute force attempts for SSH logins. This includes tracking failed logins and failed password attempts.
    - **Search for Failed Login Attempts**: Created a custom query to identify failed SSH login attempts with additional information such as source IP and user account.
-  ![Failed SSH Login Query](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2041%20Query%20for%20failed%20SSH%20login%20attempts.PNG) <!-- Replace with actual image link -->
+  ![Failed SSH Login Query](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2038%20Setting%20up%20a%20query%20in%20our%20data%20to%20filter%20Failed%20login%20attempts%2C%20include%20IP%2C%20username%2C%20and%20region%20used.PNG) <!-- Replace with actual image link -->
 
 24. Creating Custom Detection Rules
    - **Saved Search for Rule Creation**: Saved the search for failed SSH login attempts and proceeded to create a new detection rule based on this search.
-  ![Saving Search for Rule](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2042%20Saving%20search%20for%20SSH%20brute%20force%20rule.PNG) <!-- Replace with actual image link -->
+  ![Saving Search for Rule](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2039%20You%20can%20save%20your%20searches%2C%20Save%20it%20and%20then%20create%20an%20alert.PNG) <!-- Replace with actual image link -->
    - **Alert Creation**: I created a custom rule based on this query. This rule will generate alerts for failed login attempts, although it's not ideal for production as it might generate excessive alerts. The goal was to get some sample data for my project.
-  ![Custom Rule Setup](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2043%20Creating%20SSH%20brute%20force%20alert%20rule.PNG) <!-- Replace with actual image link -->
+  ![Custom Rule Setup](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2040%20Creating%20the%20query%20rule%2C%20and%20implementing%20it.PNG) <!-- Replace with actual image link -->
 
-25. Visualizing Data on Dashboard
-   - **Adding Map to Dashboard**: Created a map to visualize the failed authentication attempts based on IP locations.
-  ![Failed Authentication Map](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2044%20SSH%20failed%20authentication%20map.PNG) <!-- Replace with actual image link -->
-   - **Creating Dashboard for SSH Failures**: After adding the map, I created the complete dashboard to display the failed login attempts visually.
-  ![SSH Brute Force Dashboard](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2045%20Created%20SSH%20brute%20force%20dashboard.PNG) <!-- Replace with actual image link -->
-    - **Adding Successful Login Attempts**: Repeated the same process for successful authentication attempts. Created a dashboard for both failed and successful login attempts to monitor the overall access trends.
-  ![Successful SSH Logins](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2046%20SSH%20successful%20logins%20dashboard.PNG) <!-- Replace with actual image link -->
-
-26. Dashboard Creation Completed
+25. Dashboard Creation Completed
    - **Final Dashboard**: The dashboard, now containing both failed and successful login visualizations, was successfully created and is fully operational.
-  ![Final SSH Dashboard](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2047%20Completed%20SSH%20dashboard.PNG) <!-- Replace with actual image link -->
+  ![Final SSH Dashboard](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2042%20Dashboard%20Successfully%20Created.PNG) <!-- Replace with actual image link -->
 
