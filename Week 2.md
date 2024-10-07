@@ -78,4 +78,4 @@ Hey everyone! Welcome to Week 2 of the **30-Day SOC Analyst Challenge**. This we
 
 21. **Agent Successfully Connected!**  
     - Finally, I got the agent connected. Everything came together 
-    ![image](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/
+    ![image](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2036%20Looking%20good!%20Our%20agent%20has%20been%20connected.PNG)
