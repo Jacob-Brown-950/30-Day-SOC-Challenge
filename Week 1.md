@@ -1,6 +1,6 @@
 ## Week 1: ELK Stack Setup and Fleet Server Configuration
 
-Hey everyone! Welcome to Week 1 of the **30-Day SOC Analyst Challenge**. This week, I jumped into setting up the **ELK stack** and got the **Fleet Server** configured. There were a few bumps along the way, but I’ve learned a ton and will walk you through everything I did, why I did it, and share some helpful tips to make your setup process smoother if you're following along.
+Hey everyone! Welcome to Week 1 of the **30-Day SOC Analyst Challenge**. This week, I jumped into setting up the **ELK stack** and got the **Fleet Server** configured. I’ve learned a ton and will walk you through everything I did, why I did it, and share some helpful tips to make your setup process smoother if you're following along.
 
 ---
 
