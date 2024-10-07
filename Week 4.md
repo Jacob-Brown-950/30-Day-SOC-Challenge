@@ -1,6 +1,8 @@
 # Week 4: Security & System Setup
 
-## Tasks Completed
+Hey everyone! Welcome to Week 4 of the **30-Day SOC Analyst Challenge**. This week, I jumped into **Investigation** and got the **Elastic Defender** configured. I’ve learned a ton and will walk you through everything I did, why I did it, and share some helpful tips to make your setup process smoother if you're following along.
+
+---
 
 ### 1. Query for svchost and Investigated Event ID 1
 - Investigated event logs and queried for `svchost`. 
@@ -61,7 +63,6 @@
 
   ![resolved xampp errors image](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2091%20edited%20the%20config%20inc%20file%20to%20point%20to%20our%20public%20IP.PNG)
   ![resolved xampp errors image](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%2092%2C%20oops%20make%20sure%20you%20add%20your%20password%20to%20the%20config%20too.PNG)
-  
 
 ### 13. Downloaded and Set Up osTicket
 - Downloaded the free, self-hosted, open-source software `osTicket`.
@@ -106,7 +107,7 @@
   ![test payload image](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%20104%20Succesfully%20tested%20the%20payload%20to%20confirm%20ticketing%20can%20communicate.PNG)
 
 ### 23. Investigated Ticket Flood (Alert Fatigue)
-- Encountered a high volume of tickets due to configuration choices—this was not optimal and could to alert fatigue.
+- Encountered a high volume of tickets due to configuration choices—this was not optimal and could lead to alert fatigue.
   
   ![ticket flood image](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%20105%20We%20got%20tons%20of%20tickets.PNG)
 
@@ -126,8 +127,6 @@
 
   ![elastic defender image](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%20109%20downloading%20elastic%20defend.PNG)
   ![elastic defender image](https://github.com/Jacob-Brown-950/30-Day-SOC-Challenge/blob/main/Screenshots/Step%20110%20our%20windows%20endpoint%20is%20running%20defender%20and%20we%20can%20isolate%20it.PNG)
-
-
 
 ### Conclusion
 This concludes Week 4's activities, which covered system setup, security investigations, rule creation, and system integrations.
