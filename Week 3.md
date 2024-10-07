@@ -1,6 +1,6 @@
 # Week 3: Brute Force RDP Attack Simulation and Mythic C2 Setup
 
-## Steps
+Hey everyone! Welcome to Week 3 of the **30-Day SOC Analyst Challenge**. This week, I jumped into setting up the **Mythic C2C** and got the **Apollo Agent** configured. There were a few bumps along the way, but I’ve learned a ton and will walk you through everything I did, why I did it, and share some helpful tips to make your setup process smoother if you're following along.
 
 ### 1. Finding Exposed RDP Servers
 - **Using Shodan**: Search for servers with exposed RDP on the default port.
