@@ -49,8 +49,6 @@ Hey everyone! Welcome to Week 4 of the **30-Day SOC Analyst Challenge**. This we
 ### 10. Started Apache and MySQL Services
 - Started the Apache and MySQL services in the XAMPP control panel.
 
-  ![xampp services image](path/to/your/image.png)
-
 ### 11. Edited phpMyAdmin and Config Files
 - Made modifications in `phpMyAdmin` to configure it for external access by setting the public IP and credentials.
 - Also edited the `config.inc.php` for the same purpose.
